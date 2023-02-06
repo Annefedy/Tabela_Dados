@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="function.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Tabela de Dados</title>
+</head>
+<body>
+  <input type="hidden" id="teste" value="N">
+  <h1 id="teste_header"></h1>
+  <button class="btn" onclick="addRow();">Adicionar Nova Linha</button>
+  <table id="myTable">
+    <tr>
+      <th>Tipo</th>
+      <th>Modelo</th>
+      <th>Marca</th>
+      <th>Cor</th>
+      <th>Renavam</th>
+      <th>Placa</th>
+      <th>Ações</th>
+    </tr>
+    <tr>
+      <td>Carro</td>
+      <td class="modelo">Gol</td>
+      <td>Volkswagen</td>
+      <td>Preto</td>
+      <td>1234567890</td>
+      <td>ABC1234</td>
+      <td><button class="btn" onclick="removeRow(this);">Remover</button><button class="btn" onclick="editRow(this);">Alterar</button></td>
+    </tr>
+    <tr>
+      <td>Carro</td>
+      <td class="modelo">Uno</td>
+      <td>Fiat</td>
+      <td>Branco</td>
+      <td>2345678901</td>
+      <td>ABCD1234</td>
+      <td><button class="btn" onclick="removeRow(this);">Remover</button><button class="btn" onclick="editRow(this);">Alterar</button></td>
+    </tr>
+    <tr>
+      <td>Moto</td>
+      <td class="modelo">CBR</td>
+      <td>Honda</td>
+      <td>Vermelho</td>
+      <td>3456789012</td>
+      <td>ABCDE1234</td>
+      <td><button class="btn" onclick="removeRow(this);">Remover</button><button class="btn" onclick="editRow(this);">Alterar</button></td>
+    </tr>
+    <tr>
+      <td>Carro</td>
+      <td class="modelo">Palio</td>
+      <td>Fiat</td>
+      <td>Azul</td>
+      <td>4567890123</td>
+      <td>ABCDEF1234</td>
+      <td><button class="btn" onclick="removeRow(this);">Remover</button><button class="btn" onclick="editRow(this);">Alterar</button></td>
+    </tr>
+    <tr>
+      <td>Carro</td>
+      <td class="modelo">Civic</td>
+      <td>Honda</td>
+      <td>Prata</td>
+      <td>5678901234</td>
+      <td>ABCDEFG1234</td>
+      <td><button class="btn" onclick="removeRow(this);">Remover</button><button class="btn" onclick="editRow(this);">Alterar</button></td>
+    </tr>
+  </table>
+  
+</body>
+</html>
